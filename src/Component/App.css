@@ -469,10 +469,10 @@ nav ul li a:hover {
   border-left-color: #000000;
 }
 nav ul li div:hover {
-    color: #ffffff;
-    background-color: rgb(70, 69, 69);
-    border-left-color: #000000;
-  }
+  color: #ffffff;
+  background-color: rgb(70, 69, 69);
+  border-left-color: #000000;
+}
 #sidesubbar {
   display: none;
   margin: 0 0;
@@ -573,3 +573,124 @@ nav ul ul li a {
     display: none;
   }
 }
+/*=======HOME HOME HOME HOME HOME ================*/
+.welcome {
+  width: 100%;
+  padding-top: 10px;
+  margin-top: 200px;
+}
+
+h1 {
+  font-weight: 100;
+}
+.welcome ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  align-items: center;
+}
+.welcome ul li {
+  width: 45%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+}
+.welcome ul li p {
+  font-size: 0.9rem;
+  color: rgb(88, 88, 88);
+}
+
+.welcome ul li h1 {
+  font-family: "Cinzel", serif;
+  font-weight: 100;
+}
+.container {
+  animation: animate 16s ease-in-out infinite;
+  background-size: cover;
+  height: 430px;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 6px solid rgb(236, 232, 232);
+}
+@keyframes animate {
+  0%,
+  100% {
+    background-image: url(../Pages/Image/back00.jpg);
+  }
+
+  75% {
+    background-image: url(../Pages/Image/back001.jpg);
+  }
+}
+.start00 {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  
+  flex-wrap: wrap;
+  padding-bottom: 3rem;
+}
+.start00 img {
+  border-radius: 5px;
+}
+.start00 ul {
+  width: 100%;
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.start00 ul:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.start00 ul li a h1 {
+  font-family: "Cinzel", serif;
+}
+.start00 ul li {
+  width: 40%;
+  line-height: 1.5rem;
+}
+.start00 ul li img {
+  width: 100%;
+}
+@media screen and (max-width: 850px) {
+  .welcome {
+    margin-top: -100px;
+  }
+  .welcome ul {
+    flex-direction: column-reverse;
+  }
+  .welcome ul li {
+    width: 100%;
+    font-size: 0.8em;
+  }
+  .start00 {
+    flex-wrap: wrap;
+  }
+
+  .start00 ul {
+    flex-direction: column;
+
+    width: 85%;
+    padding: 2%;
+  }
+  .start00 ul li {
+    width: 100%;
+  }
+  .start00 ul:nth-child(even) {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .welcome {
+    margin-top: -150px;
+  }
+}
+/*==============================
+=====home end =================*/
