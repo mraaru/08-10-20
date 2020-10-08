@@ -71,7 +71,7 @@ a {
 .end h5 {
   justify-content: center;
   display: flex;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .endbox {
   display: flex;
@@ -132,15 +132,21 @@ a {
 }
 .endmenumobile {
   display: none;
-  margin-top: 20px;
+  margin: -45px 0;
+  
 }
 .endmenumobile ul {
   background: transparent;
 }
 .endmenumobile ul li {
-  line-height: 30px;
+  line-height: 40px;
   border-bottom: none;
   margin-left: 0;
+  padding-left: 5px;
+ border-bottom: .5px solid rgb(211, 208, 208);
+}
+.endmenumobile ul li:hover{
+  border-left: 3px solid black;
 }
 .endmenumobile ul li a:hover {
   background-color: transparent;
@@ -239,10 +245,7 @@ a {
   }
 }
 @media screen and (max-width: 600px) {
-  .conditionterm {
-    font-size: 0.8em;
-    padding: 0 3px;
-  }
+  
   .conditionterm a {
     padding: 0 5px;
     font-size: 0.75em;
@@ -396,7 +399,7 @@ header ul li ul li {
   justify-content: center;
 }
 #sidebar img {
-  width: 170px;
+  width: 150px;
 }
 .sidebarlogoline {
   width: 100%;
@@ -631,7 +634,7 @@ h1 {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  
+
   flex-wrap: wrap;
   padding-bottom: 3rem;
 }
@@ -650,6 +653,7 @@ h1 {
 }
 .start00 ul li a h1 {
   font-family: "Cinzel", serif;
+  line-height: 2.2rem;
 }
 .start00 ul li {
   width: 40%;
@@ -659,9 +663,7 @@ h1 {
   width: 100%;
 }
 @media screen and (max-width: 850px) {
-  .welcome {
-    margin-top: -100px;
-  }
+  
   .welcome ul {
     flex-direction: column-reverse;
   }
@@ -689,8 +691,69 @@ h1 {
 
 @media screen and (max-width: 550px) {
   .welcome {
-    margin-top: -150px;
+    margin-top: -1px;
   }
+.start00 ul li a h1 {
+ font-size: 1.8rem; 
+}
 }
 /*==============================
-=====home end =================*/
+=====home end =================
+===============================
+==========================================================================
+============================================================================
+===========  last landing page lay out =====================================*/
+
+.articalbox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.articalbox img {
+  width: 100%;
+}
+
+.boxartical {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.boxartical ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.boxartical ul li h1 {
+  font-size: 1.7rem;
+}
+
+.boxartical ul li {
+  padding: 20px 0;
+}
+
+.boxartical ul li p {
+  padding: 0 20px;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 700px) {
+  .boxartical {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .articalbox {
+    margin-top: 0px;
+  }
+}
+
+/*====================================================
+=last landing page end
+========================================================*/

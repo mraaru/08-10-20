@@ -35,7 +35,7 @@ export class Footer extends Component {
       <>
         <div className="end">
           <div className="endtop">
-            <a href="index.html">
+            <a href="/">
               <img src={Logo} alt="/" />
             </a>
             <div className="endcontacttop">
@@ -109,23 +109,7 @@ export class Footer extends Component {
                   <li>
                     <a href="/">Mental Wellness</a>
                   </li>
-                  <li onClick={togglesubmenuha}>
-                    Ask Doctor
-                    <ul id="sidesubbar80">
-                      <li>
-                        <a href="/">Allopathic</a>
-                      </li>
-                      <li>
-                        <a href="/">Ayurvedic</a>
-                      </li>
-                      <li>
-                        <a href="/">Homeopathic</a>
-                      </li>
-                      <li>
-                        <a href="/">Physiotherapist</a>
-                      </li>
-                    </ul>
-                  </li>
+                 
                 </ul>
               </li>
               <li onClick={togglesubmenuda}>
@@ -339,6 +323,7 @@ export class Footer extends Component {
             <a href="/">About Us</a>
           </div>
           <h5>Copyright © 2020 Nari Jagran. All Rights Reserved</h5>
+          <h5><a href="https://www.instagram.com/___mr_aaru___?r=nametag">Powered by A.P</a></h5>
         </div>
       </>
     );
