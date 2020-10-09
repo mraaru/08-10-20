@@ -1,120 +1,65 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import Menux from './Common-menu-a/index'
 
-window.addEventListener("scroll", function () {
-  var header = document.querySelector("header");
-  header.classList.toggle("sticky", window.scrollY > 200);
-});
-
-function togglesidebar() {
-  document.getElementById("sidebar").classList.toggle("active");
-}
 
 export class Menu extends Component {
   render() {
     return (
       <>
-        <header>
-          <ul>
-            <li className="topo">
-              <div className="toggle_btn" onClick={togglesidebar}>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </li>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/herright">HerRights</Link>
-              <ul>
-                <li>
-                  <Link to="/knowyourright">Know Your Rights</Link>
-                </li>
-                <li>
-                  <Link to="/childright">Child Rights</Link>
-                </li>
-                <li>
-                  <a href="http://ncw.nic.in/ncw-cells/complaint-investigation-cell">
-                    Complain To NCW
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Link to="/herstory">HerStory</Link>
-              <ul>
-                <li>
-                  <Link to="/article">Articles</Link>
-                </li>
-                <li>
-                  <Link to="/biography">Biography</Link>
-                </li>
-                <li>
-                  <Link to="/interviews">Interviews</Link>
-                </li>
-                <li>
-                  <Link to="/share_with_us">Share with us</Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Link to="/news">InNews</Link>
-              <ul>
-                <li>
-                  <Link to="/daily_news">Daily News</Link>
-                </li>
-                <li>
-                  <Link to="/opinion">Opinion</Link>
-                </li>
-                <li>
-                  <Link to="/op-ed">OP-ED Columnist</Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Link to="/hercare">HerCare</Link>
-              <ul>
-                <li>
-                  <Link to="/">Fitness</Link>
-                </li>
-                <li>
-                  <Link to="/">Skin & Hair Care</Link>
-                </li>
-                <li>
-                  <Link to="/">Ayurveda & Yoga</Link>
-                </li>
-                <li>
-                  <Link to="/">Mantel Wellness </Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Link to="/herhome">HerHome</Link>
-              <ul>
-                <li>
-                  <Link to="/">Food Recipe</Link>
-                </li>
-                <li>
-                  <Link to="/">Home Decor</Link>
-                </li>
-                <li>
-                  <Link to="/">Gardening</Link>
-                </li>
-                <li>
-                  <Link to="/">Life Style</Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Link to="/">About us</Link>
-            </li>
-            <li>
-              <Link to="/">Contact Us</Link>
-            </li>
-          </ul>
-        </header>
+        <Menux
+          link1='/'
+          name1='Home'
+          link2='/'
+          name2='HerRight'
+          link2a='/'
+          name2a='Know Your Right'
+          link2b='/'
+          name2b='Child Right'
+          link2c='http://ncw.nic.in/ncw-cells/complaint-investigation-cell'
+          name2c='Complain To NCW'
+          link3='/'
+          name3='HerStory'
+          link3a='/'
+          name3a='Articles'
+          link3b='/'
+          name3b='Biography'
+          link3c='/'
+          name3c='Interviews'
+          link3d='/'
+          name3d='Share with us'
+          link4='/news'
+          name4='InNews'
+          link4a='/news'
+          name4a='Daily News'
+          link4b='/'
+          name4b='Opinion'
+          link4c='/'
+          name4c='OP-ED Columnist'
+          link5='/'
+          name5='HerCare'
+          link5a='/'
+          name5a='Fitness'
+          link5b='/'
+          name5b='Skin & Hair Care'
+          link5c='/'
+          name5c='Ayurveda & Yoga'
+          link5d='/'
+          name5d='Mantel Wellness'
+          link6='/'
+          name6='HerHome'
+          link6a='/'
+          name6a='Food Recipe'
+          link6b='/'
+          name6b='Home Decor'
+          link6c='/'
+          name6c='Gardening'
+          link6d='/'
+          name6d='Life Style'
+          link7='/'
+          name7='About Us'
+          link8='/'
+          name8='Contact us'
+        />
       </>
     );
   }

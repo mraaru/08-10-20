@@ -25,9 +25,7 @@ function togglesubmenufa() {
 function togglesubmenuga() {
   document.getElementById("sidesubbar70").classList.toggle("show");
 }
-function togglesubmenuha() {
-  document.getElementById("sidesubbar80").classList.toggle("showo");
-}
+
 
 export class Footer extends Component {
   render() {
