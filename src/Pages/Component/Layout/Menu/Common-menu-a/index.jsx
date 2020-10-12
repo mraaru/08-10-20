@@ -5,11 +5,9 @@ window.addEventListener("scroll", function () {
   var header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 200);
 });
-
 function togglesidebar() {
   document.getElementById("sidebar").classList.toggle("active");
 }
-
 const Menux = (props) => {
   return (
     <>

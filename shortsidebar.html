@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            list-style: none;
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        h3 {
+            font-weight: 800;
+        }
+
+        #sidebar-sec {
+            width: 100%;
+            position: fixed;
+            flex-direction: column;
+            display: none;
+            transition: .5s;
+            left: -100%;
+        }
+
+        .sidebar-sec-top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media screen and (max-width:600px) {
+            #sidebar-sec {
+                display: flex;
+            }
+        }
+
+        .sidebar-sec-con {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-evenly;
+            margin-top: 3rem;
+            flex-direction: column;
+        }
+
+        .sidebar-sec-con ul {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 40px 0;
+            justify-content: space-evenly;
+        }
+
+        .sidebar-sec-con ul li {
+            width: 40%;
+            height: 2rem;
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        .sidebar-sec-con li {
+            margin-left: 3%;
+        }
+
+        .toggle_btn {
+            position: fixed;
+            left: 10px;
+            top: 10px;
+            width: 30px;
+            height: 25px;
+
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: .5s;
+            border: .5PX SOLID gray;
+
+        }
+
+        .toggle_btn span {
+            width: 25px;
+            height: 2px;
+            background-color: black;
+            margin: 2.5px 0;
+            transition: .5s;
+        }
+
+        #sidebar-sec.active {
+            left: 0;
+        }
+
+        #sidebar-sec.active .toggle_btn {
+            border: .5PX SOLID gray;
+            border-radius: 50%;
+        }
+
+        #sidebar-sec.active .toggle_btn span:nth-child(1) {
+            transform: rotate(50deg);
+            position: absolute;
+            margin: 0;
+            width: 20px;
+        }
+
+        #sidebar-sec.active .toggle_btn span:nth-child(2) {
+            transform: rotate(130deg);
+            position: absolute;
+            margin: 0;
+            width: 20px;
+        }
+
+        #sidebar-sec.active .toggle_btn span:nth-child(3) {
+            position: absolute;
+            left: -200px;
+            margin: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+   
+    <script>function togglesidebar() {
+            document.getElementById("sidebar-sec").classList.toggle("active");
+        }</script>
+</body>
+
+</html>
